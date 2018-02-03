@@ -1,0 +1,13 @@
+<h1>Forest Selection</h1>
+
+<div>
+    <ul>
+        <li ng-repeat = "(key, forest) in forestData">
+            <p>Forest: {{forest.name}}</p>
+            <p>Location: {{forest.location}}</p>
+            <p>Description: {{forest.description}}</p>
+            <button type="button" ng-click="addToFavs(key)">Add to Favorites</button>
+        </li>
+    </ul>
+</div>
+
